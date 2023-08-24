@@ -6,5 +6,4 @@ The project is divided into four sections:
 
 The first and second points are covered in the notebook 'Exploration_notebook'.\
 The third and fourth points are covered in the notebook 'Energy_prediction_notebook' for predicting the energy consumption and in the notebook 'GHG_prediction_notebook' for predicting the GHG emission of the buildings.\
-
 A powerpoint presentation of the project can be shared under request.
