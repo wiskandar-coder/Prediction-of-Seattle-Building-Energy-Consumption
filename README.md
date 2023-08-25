@@ -3,7 +3,7 @@ The project is for predicting energy consumption and GHG emission of non-residen
 
 ![image](https://github.com/wiskandar-coder/Prediction-of-Seattle-Building-Energy-Consumption/assets/64427335/d5237b92-ba62-45ac-beeb-426589a4c09f)
 
-The project is divided into four sections:
+The project is divided into five sections:
 ~~~
 1- First is the cleaning of the data.
     I started by importing the data from the city of Seattle website https://data.seattle.gov/dataset/2016-Building-Energy-Benchmarking/2bpz-gwpy. The definition of the variables can be found there as well.
