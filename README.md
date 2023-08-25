@@ -20,15 +20,23 @@ The project is divided into four sections:
     - Property Use Type Count: Number of usage type of the property
     - Main Energy Source: main energy source from electricity or steam or natural gas
     - Energy Source Count: number of energy source used in the property
-4- Third we analyse the selected features:
+4- Fourth we analyse the selected features:
     - univariate analysis of each feature
     - bivariate analysis to check for correlation between the features:
         - correlation factor using pearson method between the numerical features
         - Kruskal-Wallis H-test between the categorical features and numerical features
-5- Finally, arguments about the feasability of the idea are given
-    (what missing in this project is the actual application)
+5- Fifth, prediction of energy consumptions and GHG emissions:
+    - Dividing the data into 80% train and 20% test
+    - "for" loop to test the prediction with and without logarithmic scale of the target (energy consumptions and GHG emissions feature due to their asymmetric distribution)
+    - "for" loop to test the prediction on different set/combination of selected features
+    - "for" loop to test the prediction on different method for the normalisation of the numerical features (MinMaxScaler, StandardScaler, RobustScaler, et PowerTransformer)
+    - "for" loop to test the prediction using different regression models (Linear, ElasticNet, KernelRidge, KNN, RandomForest, et XGBoost)
+    - Pipeline together the categorical feature transformation (OneHotEncoder), the normalisation of the numerical features, and the regression model
+    - Usage of GridSearchCV to find the optimal hyperparameters for the regression model
+    - Usage of the optimal hyperparameters for the regression model to find training time, the error (MAE, RMSE), and the r2 score (for both train and test to check for overfitting)
+    - Stock of the results in pandas df to be able to select at the end the the best regression model with the optimal hyperparameters, the best combination of features, the best normalisation method of the numerical features, and the need or not of log scaling the target
 ~~~
 
 The first, second, third, and fourth points are covered in the notebook 'Exploration_notebook'.\
-The third and fourth points are covered in the notebook 'Energy_prediction_notebook' for predicting the energy consumption and in the notebook 'GHG_prediction_notebook' for predicting the GHG emission of the buildings.\
+The fifth point is covered in the notebook 'Energy_prediction_notebook' for predicting the energy consumption and in the notebook 'GHG_prediction_notebook' for predicting the GHG emission of the buildings.\
 A powerpoint presentation of the project can be shared under request.
