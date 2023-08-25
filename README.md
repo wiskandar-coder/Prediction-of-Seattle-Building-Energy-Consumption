@@ -1,6 +1,8 @@
 # Prediction-of-Seattle-Building-Energy-Consumption
 The project is for predicting energy consumption and GHG emission of non-residential buildings of the city of Seattle. For that purpose, multiple supervided learning techniques were tested and the best technique is selected in terms of prediction time, error, and accuracy.
 
+![image](https://github.com/wiskandar-coder/Prediction-of-Seattle-Building-Energy-Consumption/assets/64427335/d5237b92-ba62-45ac-beeb-426589a4c09f)
+
 The project is divided into four sections:
 ~~~
 1- First is the cleaning of the data.
